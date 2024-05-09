@@ -32,22 +32,25 @@ const faqs = [
 
 export default function App() {
   return (
-    <div className="container mx-auto px-4 py-8 bg-guelphRed">
-      <h1 className="text-3xl font-bold text-center mb-8">
-        Frequently Asked Questions
-      </h1>
-      <Accordion selectionMode="multiple">
-        {faqs.map((faq) => (
-          <AccordionItem
-            key={faq.id}
-            aria-label={`Accordion ${faq.id}`}
-            title={faq.title}
-            style={{textAlign: 'center'}}
-          >
-            {faq.content}
-          </AccordionItem>
-        ))}
-      </Accordion>
+    <div className=" bg-blue-800">
+      <div className="max-w-10xl container mx-auto px-4 py-8 bg-guelphRed">
+        <h1 className="text-3xl font-bold text-center mb-8">
+          Frequently Asked Questions
+        </h1>
+        {/* Sets Up Accordian for every key */}
+        <Accordion selectionMode="multiple">
+          {faqs.map((faq) => (
+            <AccordionItem
+              key={faq.id}
+              aria-label={`Accordion ${faq.id}`}
+              title={faq.title}
+              style={{ textAlign: "center" }}
+            >
+              {faq.content}
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
     </div>
   );
 }

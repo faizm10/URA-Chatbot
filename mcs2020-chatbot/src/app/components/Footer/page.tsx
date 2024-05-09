@@ -4,18 +4,16 @@ import React from "react";
 export default function Footer() {
   return (
     <footer
-      style={{
-        backgroundColor: "red",
-        bottom: 0, // Stick to the bottom
-        zIndex: 1000,
-        height: "80px", // Height
-        padding: "0 20px", //Create Spacing 
-        alignItems: "center", // Vertically center the content
-        justifyContent: "center", // Horizontally center the content
-       }}
-      
-    >
-      Copyright 2024
-    </footer>
+    className="w-full bg-gray-800 text-white py-6"
+    style={{
+      background: "red",
+      position: "static",
+      bottom: 0,
+    }}
+  >
+    <div className="flex justify-center items-center space-x-4">
+      Chatbot powered by AI | © 2024 | Privacy Policy | Terms of Service
+    </div>
+  </footer>
   );
 }
