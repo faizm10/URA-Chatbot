@@ -8,12 +8,18 @@ export default function LandingPage() {
   return (
     <div
       className="flex flex-col items-center justify-center min-h-screen text-black"
-      style={{ backgroundImage: `url(${backgroundImageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      style={{
+        backgroundImage: `url("${backgroundImageUrl}")`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       <h1 className="text-4xl font-bold text-guelphRed">
         Welcome to Our ChatBot
       </h1>
-      <p className="text-xl mt-2 text-white">Your AI-powered assistant is here to help.</p>
+      <p className="text-xl mt-2 text-white">
+        Your AI-powered assistant is here to help.
+      </p>
       <div className="mt-4">
         <Link href="/pages/Home" passHref>
           <button className="bg-guelphYellow hover:bg-yellow-300 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
