@@ -1,4 +1,4 @@
-'use client'
+"use client";
 // Importing React and useState hook
 import React, { useState } from "react";
 
@@ -59,9 +59,9 @@ const faqData: FAQ[] = [
 // ChatBot component definition
 const ChatBot = () => {
   // State to store messages
-  const [messages, setMessages] = useState<{ text: string; sender: "bot" | "user" }[]>([
-    { text: "Hello! How can I assist you today?", sender: "bot" },
-  ]);
+  const [messages, setMessages] = useState<
+    { text: string; sender: "bot" | "user" }[]
+  >([{ text: "Hello! How can I assist you today?", sender: "bot" }]);
 
   // State to handle input value from the user
   const [inputValue, setInputValue] = useState<string>("");
@@ -79,7 +79,10 @@ const ChatBot = () => {
   // Function to handle bot responses
   const handleBotResponse = (input: string) => {
     // Searching for a response from FAQ data
-    const response = faqData.find((faq) => input.toLowerCase().includes(faq.question.toLowerCase()))?.answer || "I'm not sure how to help with that.";
+    const response =
+      faqData.find((faq) =>
+        input.toLowerCase().includes(faq.question.toLowerCase())
+      )?.answer || "I'm not sure how to help with that.";
     // Adding bot response to the messages array
     setMessages((msgs) => [...msgs, { text: response, sender: "bot" }]);
   };
@@ -90,12 +93,37 @@ const ChatBot = () => {
       <section className="bg-gradient-to-b from-SoftViolet to-SoftBlue  py-12 px-4 md:px-12">
         <div className="max-w-6xl mx-auto rounded-lg shadow-lg overflow-hidden">
           <div className="bg-white p-6">
-            <h2 className="text-4xl font-bold text-center text-gray-800 mb-4">ChatBot</h2>
+            <h2 className="text-4xl font-bold text-center text-gray-800 mb-4">
+              ChatBot
+            </h2>
             <p className="text-gray-600 text-center mb-6">
-              This Bot Is Currently Under Development. Head To FAQ If Issue/Bugs Appears
+              This Bot Is Currently Under Development. Head To FAQ If Issue/Bugs
+              Appears
             </p>
             <MessageList messages={messages} />
-            <InputField inputValue={inputValue} setInputValue={setInputValue} onSend={handleSendMessage} />
+            <InputField
+              inputValue={inputValue}
+              setInputValue={setInputValue}
+              onSend={handleSendMessage}
+            />
+          </div>
+        </div>
+      </section>
+      <section className="bg-gradient-to-b from-SoftViolet to-SoftBlue  py-12 px-4 md:px-12">
+        <div className="max-w-6xl mx-auto rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-white p-6"> 
+          <h1 className="text-2xl text-black font-bold text-center">Questions to Asks:</h1>
+            <ol className="text-black">
+              <li>simulation assignments</li>
+              <li>discussion posts</li>
+              <li>excel assignments</li>
+
+              <li>quiz schedule</li>
+              <li>final exam format</li>
+              <li>textbook</li>
+              <li>contact the instructor</li>
+              <li>mylab assignments</li>
+            </ol>
           </div>
         </div>
       </section>
