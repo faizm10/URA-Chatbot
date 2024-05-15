@@ -21,10 +21,10 @@
 ### 2. **Building the Frontend with Next.js and Tailwind CSS**
 
 - **Responsive UI**: Developed a user-friendly interface with Next.js. Use Tailwind CSS for styling to make it clean and easy to use.
-***Next Steps***
+- ***Next Steps***
   - Make sure it works well on all devices.
   - Update the chatbot interface to improve how users interact with it.
-- **Interaction with Backend**: Use Next.js API routes to handle requests between the frontend and the Python backend. Manage state and user interactions effectively.
+  - **Interaction with Backend**: Use Next.js API routes to handle requests between the frontend and the Python backend. Manage state and user interactions effectively.
 
 ### 3. **Database Setup**
 - **Platform**: Decide the best database for the ChatBot.
