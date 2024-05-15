@@ -1,9 +1,8 @@
 import React from "react";
-import Link from "next/link"; // Import Link from next/link
+import Link from "next/link";
 
 export default function LandingPage() {
-  // Use template literals to include the image URL in the inline style
-  const backgroundImageUrl = "/images/5433943.jpg"; // Adjust this path if your image is located differently
+  const backgroundImageUrl = "/images/5433943.jpg"; 
 
   return (
     <div
