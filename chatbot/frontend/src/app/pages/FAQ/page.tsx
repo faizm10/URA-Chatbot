@@ -10,19 +10,17 @@ const faqCategories = [
       {
         id: "1",
         title: "What is a Chatbot?",
-        content:
-          "N/A",
+        content: "N/A",
       },
       {
         id: "2",
         title: "Why should I use chatbot?",
-        content:
-        "N/A",      },
+        content: "N/A",
+      },
       {
         id: "3",
         title: "How much does it cost?",
-        content:
-          "It's completely free!",
+        content: "It's completely free!",
       },
     ],
   },
@@ -32,13 +30,12 @@ const faqCategories = [
       {
         id: "4",
         title: "N/A",
-        content:
-        "N/A",
+        content: "N/A",
       },
       {
         id: "5",
         title: "N/A",
-        content:"N/A",
+        content: "N/A",
       },
     ],
   },
@@ -48,8 +45,7 @@ const faqCategories = [
       {
         id: "6",
         title: "N/A",
-        content:
-        "N/A",
+        content: "N/A",
       },
     ],
   },
@@ -106,7 +102,7 @@ export default function App() {
             Got a technical issue? Want to send feedback about a beta feature?
             Let us know by submitting this form!
           </p>
-
+          
           <input
             type="email"
             name="floating_email"
@@ -117,7 +113,7 @@ export default function App() {
           />
           <label
             htmlFor="floating_email"
-            className="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-0 peer-focus:start-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            className="absolute text-sm text-black duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-0 peer-focus:start-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
           >
             Email address
           </label>
