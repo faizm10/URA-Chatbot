@@ -111,8 +111,10 @@ const ChatBot = () => {
       </section>
       <section className="bg-gradient-to-b from-SoftViolet to-SoftBlue  py-12 px-4 md:px-12">
         <div className="max-w-6xl mx-auto rounded-lg shadow-lg overflow-hidden">
-          <div className="bg-white p-6"> 
-          <h1 className="text-2xl text-black font-bold text-center">Questions to Asks:</h1>
+          <div className="bg-white p-6">
+            <h1 className="text-2xl text-black font-bold text-center">
+              Questions to Asks:
+            </h1>
             <ol className="text-black">
               <li>simulation assignments</li>
               <li>discussion posts</li>
