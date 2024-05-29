@@ -89,9 +89,10 @@ const ChatBot = () => {
 
   return (
     <>
-      <NavBar />
-      <section className="bg-gradient-to-b from-SoftViolet to-SoftBlue  py-12 px-4 md:px-12">
-        <div className="max-w-6xl mx-auto rounded-lg shadow-lg overflow-hidden">
+      {/* <NavBar /> */}
+      {/* <section className="bg-gradient-to-b from-SoftViolet to-SoftBlue  py-12 px-4 md:px-12"> */}
+        {/* <div className="max-w-6xl mx-auto rounded-lg shadow-lg overflow-hidden"> */}
+        <div className="shadow-lg overflow-hidden">
           <div className="bg-white p-6">
             <h2 className="text-4xl font-bold text-center text-gray-800 mb-4">
               ChatBot
@@ -108,8 +109,8 @@ const ChatBot = () => {
             />
           </div>
         </div>
-      </section>
-      <section className="bg-gradient-to-b from-SoftViolet to-SoftBlue  py-12 px-4 md:px-12">
+      {/* </section> */}
+      {/* <section className="bg-gradient-to-b from-SoftViolet to-SoftBlue  py-12 px-4 md:px-12">
         <div className="max-w-6xl mx-auto rounded-lg shadow-lg overflow-hidden">
           <div className="bg-white p-6">
             <h1 className="text-2xl text-black font-bold text-center">
@@ -128,7 +129,7 @@ const ChatBot = () => {
             </ol>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
