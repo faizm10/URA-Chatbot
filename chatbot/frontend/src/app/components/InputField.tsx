@@ -24,7 +24,7 @@ const InputField: React.FC<InputFieldProps> = ({ inputValue, setInputValue, onSe
       <div className="flex items-center space-x-4">
         <input
           type="text"
-          className="flex-1 p-4 text-lg border-2 border-gray-300 rounded-lg focus:outline-none text-black"
+          className="flex-1 p-4 text-lg border-2 border-gray-300 rounded-full focus:outline-none text-black"
           placeholder="Type your message here..."
           value={inputValue}
           onChange={handleChange}

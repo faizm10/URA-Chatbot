@@ -8,7 +8,7 @@ interface MessageListProps {
 
 const MessageList: React.FC<MessageListProps> = ({ messages }) => {
   return (
-    <div className="bg-black p-4 h-96 overflow-y-auto">
+    <div className="bg-black p-4 h-96 overflow-y-auto rounded-3xl">
       {messages.map((message, index) => (
         <Message key={index} message={message} />
       ))}
