@@ -6,7 +6,10 @@ git add .
 git commit -m 'your message'
 git push
 ```
-
+1. Create a feature branch (`git checkout -b name/YourFeature`)
+2. Commit your changes (`git commit -m 'msg'`)
+3. Push to the branch (`git push origin name/YourFeature`)
+4. Go To GitHub & Submit a Pull Request & Let Faiz Know
 
 <!-- # MCS*2020 Information Management Chatbot
 
