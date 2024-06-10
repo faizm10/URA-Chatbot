@@ -1,0 +1,32 @@
+{
+  "Category Name": [
+    {
+      "question": "Enter your question here",
+      "answer": "Enter the answer here"
+    },
+    {
+      "question": "Enter another question here",
+      "answer": "Enter the answer here"
+    }
+  ],
+  "Another Category Name": [
+    {
+      "question": "Enter your question here",
+      "answer": "Enter the answer here"
+    }
+  ],
+  "Additional Category": [
+    {
+      "question": "Enter your question here",
+      "answer": "Enter the answer here"
+    },
+    {
+      "question": "Enter another question here",
+      "answer": "Enter the answer here"
+    },
+    {
+      "question": "Enter yet another question here",
+      "answer": "Enter the answer here"
+    }
+  ]
+}
