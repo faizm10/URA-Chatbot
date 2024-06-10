@@ -10,7 +10,8 @@ git push
 2. Add (`git add .`)
 3. Commit your changes (`git commit -m 'msg'`)
 4. Push to the branch (`git push origin name/YourFeature`)
-5. Go To GitHub & Submit a Pull Request & Let Faiz Know
+5. `git checkout main`
+6. Go To GitHub & Submit a Pull Request & Let Faiz Know
 
 <!-- # MCS*2020 Information Management Chatbot
 
