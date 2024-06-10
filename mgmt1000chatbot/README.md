@@ -1,11 +1,5 @@
 ### Git Commands
 
-```bash
-git clone
-git add .
-git commit -m 'your message'
-git push
-```
 1. Create a feature branch (`git checkout -b name/YourFeature`)
 2. Add (`git add .`)
 3. Commit your changes (`git commit -m 'msg'`)
