@@ -10,9 +10,9 @@ import {
 
 export default function App() {
   return (
-    <Navbar
+    <Navbar className="bg-gray-800"
       style={{
-        backgroundColor: "black",
+        
         position: "sticky",
         top: 0,
         zIndex: 1000,
@@ -26,17 +26,17 @@ export default function App() {
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link style={{ color: "white" }} href="/pages/Home">
+          <Link style={{ color: "white" }} href="/home">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link style={{ color: "white" }} href="/pages/ChatBot">
+          <Link style={{ color: "white" }} href="/chatbot">
             Chatbot
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link style={{ color: "white" }} href="/pages/FAQ">
+          <Link style={{ color: "white" }} href="/faq">
             FAQ
           </Link>
         </NavbarItem>

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Accordion, AccordionItem, Textarea, Input } from "@nextui-org/react";
-import NavBar from "@/app/components/NavBar";
+import NavBar from "@/components/NavBar";
 // Define FAQs
 const faqCategories = [
   {
