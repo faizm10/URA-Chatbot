@@ -10,9 +10,9 @@ import {
 
 export default function App() {
   return (
-    <Navbar className="bg-gray-800"
+    <Navbar
+      className="bg-gray-800"
       style={{
-        
         position: "sticky",
         top: 0,
         zIndex: 1000,
@@ -21,10 +21,10 @@ export default function App() {
       }}
       isBordered
     >
-      <NavbarBrand>
-        <p className="font-bold text-inherit">MCS*2020 TA AI</p>
-      </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      {/* <NavbarBrand className="">
+        <p className="text-white font-bold text-inherit">MCS*2020 TA AI</p>
+      </NavbarBrand> */}
+      <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarItem>
           <Link style={{ color: "white" }} href="/home">
             Home

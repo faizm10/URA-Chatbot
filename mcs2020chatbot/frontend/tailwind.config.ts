@@ -15,6 +15,7 @@ const config: Config = {
       },
       //custom colors
       colors: { 
+        primary: '#1f2937',
         guelphRed: '#cc0000',
         guelphBlack: '#000',
         guelphYellow: '#ffcc00',
