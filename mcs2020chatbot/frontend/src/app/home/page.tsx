@@ -1,14 +1,16 @@
 import React from "react";
 import NavBar from "@/components/NavBar";
 import ParticlesComponent from "@/components/Particles";
-
+import { Suspense } from "react";
 const Home: React.FC = () => {
   return (
     <>
       <NavBar />
       <div className="relative min-h-screen bg-gradient-to-b from-gray-800 to-gray-900 flex flex-col items-center justify-center text-center p-4">
         {/* ParticlesComponent as background */}
+        <Suspense fallback={<div>Loading...</div>}> 
         <ParticlesComponent />
+      </Suspense>
 
         <div className="z-10 max-w-4xl p-8 bg-opacity-80 bg-black rounded-lg shadow-xl">
           <h1 className="text-5xl font-bold text-yellow-400 mb-6">
