@@ -13,7 +13,6 @@
     "@tsparticles/react": "^3.0.0",
     "framer-motion": "^11.1.9",
     "next": "14.2.3",
-    "particles.js": "^2.0.0",
     "react": "^18",
     "react-dom": "^18",
     "tsparticles": "^3.4.0",
