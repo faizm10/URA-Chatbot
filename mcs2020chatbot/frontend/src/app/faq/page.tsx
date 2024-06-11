@@ -90,7 +90,7 @@ export default function App() {
           <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 ">
             {faqCategories.map((category) => (
               <div
-                key={category.category}
+                // key={category.category}
                 className="bg-white rounded-lg shadow-lg p-6 text-black text-center"
               >
                 <h2 className="text-2xl font-semibold mb-5">
