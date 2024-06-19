@@ -2,54 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import NavBar from "@/components/NavBar";
 import { Textarea, Button, Image } from "@nextui-org/react";
-
-interface FAQ {
-  question: string;
-  answer: string;
-}
-
-const faqData: FAQ[] = [
-  {
-    question: "simulation assignments",
-    answer:
-      "Simulation assignments are due at the end of weeks 1, 3, 6, 8, and 10. You can submit these via the MyLab platform.",
-  },
-  {
-    question: "excel assignments",
-    answer:
-      "Excel assignments need to be submitted through MyLab. They are scheduled for weeks 2, 4, 7, 9, and 11.",
-  },
-  {
-    question: "quiz schedule",
-    answer:
-      "Quizzes are scheduled for weeks 1, 3, 5, 8, 10, and 11. These can be accessed via the Quizzes tool on CourseLink.",
-  },
-  {
-    question: "final exam format",
-    answer:
-      "The final exam will be conducted online and consists of multiple-choice questions. Make sure to check the final exam schedule on WebAdvisor.",
-  },
-  {
-    question: "discussion posts",
-    answer:
-      "You need to post your initial discussion by Thursday 11:59 PM ET of the assignment week and respond to a classmate's post by Sunday 11:59 PM ET.",
-  },
-  {
-    question: "contact the instructor",
-    answer:
-      "You can email the instructor at mccallun@uoguelph.ca for detailed queries or book an appointment for office hours.",
-  },
-  {
-    question: "textbook",
-    answer:
-      "The required textbook is 'Management Information Systems: Managing the Digital Firm'. You can use the MyLab platform for digital resources.",
-  },
-  {
-    question: "mylab assignments",
-    answer:
-      "All MyLab assignments are crucial for your course performance. Make sure to complete these on time as per the given deadlines.",
-  },
-];
+import axios from "axios";
 
 interface Message {
   text: string;
@@ -79,13 +32,35 @@ const ChatBot: React.FC = () => {
     handleBotResponse(inputValue);
   };
 
-  const handleBotResponse = (input: string): void => {
-    const response =
-      faqData.find((faq) =>
-        input.toLowerCase().includes(faq.question.toLowerCase())
-      )?.answer || "I'm not sure how to help with that.";
-    const newBotMessage: Message = { text: response, sender: "bot" };
-    setMessages((prevMessages) => [...prevMessages, newBotMessage]);
+  const handleBotResponse = async (input: string): Promise<void> => {
+    try {
+      const response = await axios.post(
+        "https://api.openai.com/v1/chat/completions",
+        {
+          model: "gpt-3.5-turbo",
+          messages: [{ role: "user", content: input }],
+        },
+        {
+          headers: {
+            Authorization: `Bearer sk-hello-trpKudk5GlpQL1AD5bDaT3BlbkFJm32PcCNVz4MusxVrJcVT`,
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      const data = response.data;
+      const newBotMessage: Message = {
+        text: data.choices[0].message.content.trim(),
+        sender: "bot",
+      };
+      setMessages((prevMessages) => [...prevMessages, newBotMessage]);
+    } catch (error) {
+      console.error("Failed to fetch:", error);
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { text: "Error connecting to the server.", sender: "bot" },
+      ]);
+    }
   };
 
   return (
@@ -114,15 +89,15 @@ const ChatBot: React.FC = () => {
       </div>
       <div className="p-4 bg-gray-800 shadow-inner">
         <div className="flex items-center space-x-3">
-          <Textarea
-            fullWidth
+          <input
+            // fullWidth
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             onKeyPress={(e) =>
               e.key === "Enter" && !e.shiftKey && handleSendMessage()
             }
             placeholder="Type your message..."
-            className="flex-1 text-black font-bold p-2"
+            className="flex-1 text-black font-semibold p-2"
           />
           <Button
             onClick={handleSendMessage}
