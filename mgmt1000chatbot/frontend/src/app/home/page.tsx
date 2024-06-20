@@ -15,7 +15,7 @@ const Home: React.FC = () => {
 
         <div className="z-10 max-w-4xl p-8 bg-opacity-80 bg-black rounded-lg shadow-xl">
           <h1 className="text-5xl font-bold text-yellow-400 mb-6">
-            Welcome to the MCS2020 ChatBot Beta
+            Welcome to the MGMT1000 ChatBot Beta
           </h1>
           <p className="text-lg text-gray-300 mb-6">
             Thank you for participating in the beta testing of our latest
