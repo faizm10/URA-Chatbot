@@ -37,7 +37,8 @@ const ChatBot: React.FC = () => {
       const response = await axios.post(
         "https://api.openai.com/v1/chat/completions",
         {
-          model: "gpt-3.5-turbo",
+          // model: "gpt-3.5-turbo",
+          model: "ft:gpt-3.5-turbo-0125:mcs:mcs2020:9lMqqsfm",
           messages: [{ role: "user", content: input }],
         },
         {
