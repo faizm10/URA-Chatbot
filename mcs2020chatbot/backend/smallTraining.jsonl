@@ -1,0 +1,65 @@
+{"messages": [{"role": "user", "content": "Who is the professor for this course?"}, {"role": "assistant", "content": "The professor is Nicole McCallum."}]}
+{"messages": [{"role": "user", "content": "Can you tell me who is the course professor?"}, {"role": "assistant", "content": "The professor is Nicole McCallum."}]}
+{"messages": [{"role": "user", "content": "Who will be teaching this course?"}, {"role": "assistant", "content": "The professor is Nicole McCallum."}]}
+{"messages": [{"role": "user", "content": "Who is our professor for this course?"}, {"role": "assistant", "content": "The professor is Nicole McCallum."}]}
+{"messages": [{"role": "user", "content": "Who leads this course?"}, {"role": "assistant", "content": "The professor is Nicole McCallum."}]}
+{"messages": [{"role": "user", "content": "What is the email address of the professor?"}, {"role": "assistant", "content": "The email address is mccallun@uoguelph.ca."}]}
+{"messages": [{"role": "user", "content": "Can you provide the professor's email address?"}, {"role": "assistant", "content": "The email address is mccallun@uoguelph.ca."}]}
+{"messages": [{"role": "user", "content": "How can I contact the professor via email?"}, {"role": "assistant", "content": "The email address is mccallun@uoguelph.ca."}]}
+{"messages": [{"role": "user", "content": "What is the professor's email address?"}, {"role": "assistant", "content": "The email address is mccallun@uoguelph.ca."}]}
+{"messages": [{"role": "user", "content": "Could you give me the professor's email address?"}, {"role": "assistant", "content": "The email address is mccallun@uoguelph.ca."}]}
+{"messages": [{"role": "user", "content": "Where can I email the professor?"}, {"role": "assistant", "content": "The email address is mccallun@uoguelph.ca."}]}
+{"messages": [{"role": "user", "content": "Where is the professor's office located?"}, {"role": "assistant", "content": "The professor's office is located in MINS 257."}]}
+{"messages": [{"role": "user", "content": "Can you tell me where the professor's office is?"}, {"role": "assistant", "content": "The professor's office is located in MINS 257."}]}
+{"messages": [{"role": "user", "content": "What is the location of the professor's office?"}, {"role": "assistant", "content": "The professor's office is located in MINS 257."}]}
+{"messages": [{"role": "user", "content": "Where can I find the professor's office?"}, {"role": "assistant", "content": "The professor's office is located in MINS 257."}]}
+{"messages": [{"role": "user", "content": "Could you provide the location of the professor's office?"}, {"role": "assistant", "content": "The professor's office is located in MINS 257."}]}
+{"messages": [{"role": "user", "content": "What is the room number for the professor's office?"}, {"role": "assistant", "content": "The professor's office is located in MINS 257."}]}
+{"messages": [{"role": "user", "content": "What is the course code and title for this class?"}, {"role": "assistant", "content": "The course code is MCS*2020 and the title is 'Information Management.'"}]}
+{"messages": [{"role": "user", "content": "Can you tell me the course code and title?"}, {"role": "assistant", "content": "The course code is MCS*2020 and the title is 'Information Management.'"}]}
+{"messages": [{"role": "user", "content": "What is the course code for Information Management?"}, {"role": "assistant", "content": "The course code is MCS*2020."}]}
+{"messages": [{"role": "user", "content": "What class is MCS*2020?"}, {"role": "assistant", "content": "MCS*2020 is 'Information Management.'"}]}
+{"messages": [{"role": "user", "content": "Which course does the code MCS*2020 refer to?"}, {"role": "assistant", "content": "The course code MCS*2020 refers to 'Information Management.'"}]}
+{"messages": [{"role": "user", "content": "What's the title of MCS*2020?"}, {"role": "assistant", "content": "The title of MCS*2020 is 'Information Management.'"}]}
+{"messages": [{"role": "user", "content": "What department is this course under?"}, {"role": "assistant", "content": "This course is under the Marketing and Consumer Studies department."}]}
+{"messages": [{"role": "user", "content": "Which department offers this course?"}, {"role": "assistant", "content": "This course is under the Marketing and Consumer Studies department."}]}
+{"messages": [{"role": "user", "content": "What department is MCS*2020 part of?"}, {"role": "assistant", "content": "MCS*2020 is part of the Marketing and Consumer Studies department."}]}
+{"messages": [{"role": "user", "content": "Which department is responsible for the Information Management course?"}, {"role": "assistant", "content": "The Marketing and Consumer Studies department is responsible for the Information Management course."}]}
+{"messages": [{"role": "user", "content": "What department is this class from?"}, {"role": "assistant", "content": "This class is from the Marketing and Consumer Studies department."}]}
+{"messages": [{"role": "user", "content": "Can you tell me which department this course belongs to?"}, {"role": "assistant", "content": "This course belongs to the Marketing and Consumer Studies department."}]}
+{"messages": [{"role": "user", "content": "What is the credit weight of this course?"}, {"role": "assistant", "content": "The credit weight of this course is 0.50 credits."}]}
+{"messages": [{"role": "user", "content": "How many credits is this course worth?"}, {"role": "assistant", "content": "This course is worth 0.50 credits."}]}
+{"messages": [{"role": "user", "content": "What is the credit value of this course?"}, {"role": "assistant", "content": "The credit value of this course is 0.50 credits."}]}
+{"messages": [{"role": "user", "content": "How much credit does MCS*2020 carry?"}, {"role": "assistant", "content": "MCS*2020 carries 0.50 credits."}]}
+{"messages": [{"role": "user", "content": "What's the credit weight for this class?"}, {"role": "assistant", "content": "The credit weight for this class is 0.50 credits."}]}
+{"messages": [{"role": "user", "content": "How many credits can I earn from this course?"}, {"role": "assistant", "content": "You can earn 0.50 credits from this course."}]}
+{"messages": [{"role": "user", "content": "Is this course available in an online format?"}, {"role": "assistant", "content": "Yes, this course is available as a distance education (online) course."}]}
+{"messages": [{"role": "user", "content": "Is this course available online?"}, {"role": "assistant", "content": "Yes, this course is available as a distance education (online) course."}]}
+{"messages": [{"role": "user", "content": "Can I take this course online?"}, {"role": "assistant", "content": "Yes, you can take this course online."}]}
+{"messages": [{"role": "user", "content": "Is there an online version of this course?"}, {"role": "assistant", "content": "Yes, there is an online version of this course."}]}
+{"messages": [{"role": "user", "content": "Does this class have an online option?"}, {"role": "assistant", "content": "Yes, this class has an online option."}]}
+{"messages": [{"role": "user", "content": "Is this course offered as distance education?"}, {"role": "assistant", "content": "Yes, this course is offered as distance education."}]}
+{"messages": [{"role": "user", "content": "What are some of the topics covered in this course?"}, {"role": "assistant", "content": "Topics include the information economy, information systems and strategy, information ethics, fundamentals of digital marketing, data management, and introductory data analysis."}]}
+{"messages": [{"role": "user", "content": "What topics are included in this course?"}, {"role": "assistant", "content": "Topics include the information economy, information systems and strategy, information ethics, fundamentals of digital marketing, data management, and introductory data analysis."}]}
+{"messages": [{"role": "user", "content": "What will we learn in this course?"}, {"role": "assistant", "content": "We will learn about the information economy, information systems and strategy, information ethics, fundamentals of digital marketing, data management, and introductory data analysis."}]}
+{"messages": [{"role": "user", "content": "What subjects does this course cover?"}, {"role": "assistant", "content": "This course covers the information economy, information systems and strategy, information ethics, fundamentals of digital marketing, data management, and introductory data analysis."}]}
+{"messages": [{"role": "user", "content": "Can you list the topics covered in this class?"}, {"role": "assistant", "content": "The topics covered in this class include the information economy, information systems and strategy, information ethics, fundamentals of digital marketing, data management, and introductory data analysis."}]}
+{"messages": [{"role": "user", "content": "What are the main areas of study in this course?"}, {"role": "assistant", "content": "The main areas of study in this course are the information economy, information systems and strategy, information ethics, fundamentals of digital marketing, data management, and introductory data analysis."}]}
+{"messages": [{"role": "user", "content": "How many units are there in this course?"}, {"role": "assistant", "content": "There are 12 units in this course."}]}
+{"messages": [{"role": "user", "content": "How many units does this course have?"}, {"role": "assistant", "content": "This course has 12 units."}]}
+{"messages": [{"role": "user", "content": "What's the total number of units in this class?"}, {"role": "assistant", "content": "The total number of units in this class is 12."}]}
+{"messages": [{"role": "user", "content": "Can you tell me the number of units for this course?"}, {"role": "assistant", "content": "This course has 12 units."}]}
+{"messages": [{"role": "user", "content": "How many units are there in the Information Management course?"}, {"role": "assistant", "content": "There are 12 units in the Information Management course."}]}
+{"messages": [{"role": "user", "content": "What's the unit count for this course?"}, {"role": "assistant", "content": "The unit count for this course is 12."}]}
+{"messages": [{"role": "user", "content": "Can you tell me the format of the final exam?"}, {"role": "assistant", "content": "The final exam is conducted online via the Quizzes tool in CourseLink using Respondus LockDown Browser."}]}
+{"messages": [{"role": "user", "content": "How will the final exam be conducted?"}, {"role": "assistant", "content": "The final exam is conducted online via the Quizzes tool in CourseLink using Respondus LockDown Browser."}]}
+{"messages": [{"role": "user", "content": "What platform will be used for the final exam?"}, {"role": "assistant", "content": "The final exam is conducted online via the Quizzes tool in CourseLink using Respondus LockDown Browser."}]}
+{"messages": [{"role": "user", "content": "In what format is the final exam scheduled?"}, {"role": "assistant", "content": "The final exam is conducted online via the Quizzes tool in CourseLink using Respondus LockDown Browser."}]}
+{"messages": [{"role": "user", "content": "Could you explain the structure of the final exam?"}, {"role": "assistant", "content": "The final exam is conducted online via the Quizzes tool in CourseLink using Respondus LockDown Browser."}]}
+{"messages": [{"role": "user", "content": "What is the setup for the final exam?"}, {"role": "assistant", "content": "The final exam is conducted online via the Quizzes tool in CourseLink using Respondus LockDown Browser."}]}
+{"messages": [{"role": "user", "content": "How will we be taking the final exam?"}, {"role": "assistant", "content": "The final exam is conducted online via the Quizzes tool in CourseLink using Respondus LockDown Browser."}]}
+{"messages": [{"role": "user", "content": "What method will be used for administering the final exam?"}, {"role": "assistant", "content": "The final exam is conducted online via the Quizzes tool in CourseLink using Respondus LockDown Browser."}]}
+{"messages": [{"role": "user", "content": "Can you describe the format for the final exam?"}, {"role": "assistant", "content": "The final exam is conducted online via the Quizzes tool in CourseLink using Respondus LockDown Browser."}]}
+{"messages": [{"role": "user", "content": "How is the final exam going to be held?"}, {"role": "assistant", "content": "The final exam is conducted online via the Quizzes tool in CourseLink using Respondus LockDown Browser."}]}
+{"messages": [{"role": "user", "content": "What tool will be used for the final exam?"}, {"role": "assistant", "content": "The final exam is conducted online via the Quizzes tool in CourseLink using Respondus LockDown Browser."}]}
+{"messages": [{"role": "user", "content": "Will the final exam be online or in-person?"}, {"role": "assistant", "content": "The final exam is conducted online via the Quizzes tool in CourseLink using Respondus LockDown Browser."}]}

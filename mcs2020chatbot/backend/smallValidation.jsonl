@@ -1,0 +1,10 @@
+{"messages": [{"role": "user", "content": "What is the time limit for the final exam?"}, {"role": "assistant", "content": "The time limit for the final exam is 2 hours."}]}
+{"messages": [{"role": "user", "content": "How many questions will be on the final exam?"}, {"role": "assistant", "content": "The final exam will consist of 50 multiple-choice questions."}]}
+{"messages": [{"role": "user", "content": "Are we allowed to use textbooks during the final exam?"}, {"role": "assistant", "content": "The final exam is closed book, so you are not allowed to use textbooks or any other materials."}]}
+{"messages": [{"role": "user", "content": "Will the final exam cover all the chapters?"}, {"role": "assistant", "content": "Yes, the final exam will cover all the chapters discussed in the course."}]}
+{"messages": [{"role": "user", "content": "Can we take the final exam from home?"}, {"role": "assistant", "content": "Yes, you can take the final exam from home using Respondus LockDown Browser."}]}
+{"messages": [{"role": "user", "content": "What is the email address of the teaching assistant?"}, {"role": "assistant", "content": "The email address of the teaching assistant is ta@example.com."}]}
+{"messages": [{"role": "user", "content": "How can I schedule a meeting with the instructor?"}, {"role": "assistant", "content": "You can schedule a meeting with the instructor by emailing mccallun@uoguelph.ca."}]}
+{"messages": [{"role": "user", "content": "What is the phone number to reach the instructor?"}, {"role": "assistant", "content": "The phone number to reach the instructor is 555-1234."}]}
+{"messages": [{"role": "user", "content": "How do I join the instructor's office hours?"}, {"role": "assistant", "content": "You can join the instructor's office hours via the Zoom link provided on CourseLink."}]}
+{"messages": [{"role": "user", "content": "Where can I find the instructor's contact information?"}, {"role": "assistant", "content": "The instructor's contact information is available on the course syllabus and on CourseLink."}]}

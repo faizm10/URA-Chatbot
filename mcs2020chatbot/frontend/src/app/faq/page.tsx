@@ -34,7 +34,7 @@ const faqCategories = [
     faqs: [
       {
         id: 3,
-        title: "What should I do if the chatbot doesn't understand my question",
+        title: "What should I do if the chatbot doesn't understand my question?",
         content:
           "Try rephrasing your question or use simpler, more direct language. Ensure that your questions are within the scope of the chatbot's capabilities.",
       },
@@ -65,7 +65,7 @@ const faqCategories = [
         id: 7,
         title: "Can the chatbot handle complex queries or follow-up questions?",
         content:
-          "Currently, the chatbot can not handle complex queries or follow-up questions",
+          "Currently, the chatbot can not handle complex queries or follow-up questions.",
       },
     ],
   },
@@ -82,30 +82,31 @@ const faqCategories = [
         id: 9,
         title: "Is my conversation with the chatbot private?",
         content:
-          "Yes, Conversations with chatbots are stored for analysis and improvement of the service.",
+          "Yes, conversations with chatbots are stored for analysis and improvement of the service.",
       },
     ],
   },
 ];
+
 export default function App() {
   return (
     <>
       <NavBar />
-      <div className=" bg-primary py-10">
+      <div className="bg-white py-10">
         <div className="max-w-7xl container mx-auto px-4 py-8">
-          <h1 className="text-3xl font-bold text-center mb-8 text-white">
+          <h1 className="text-3xl font-bold text-center mb-8 text-black">
             Frequently Asked Questions
           </h1>
-          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 ">
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
             {faqCategories.map((category) => (
               <div
                 key={category.category}
-                className="bg-white rounded-lg shadow-lg p-6 text-black text-center"
+                className="rounded-lg shadow-lg p-6 text-black text-center"
               >
                 <h2 className="text-2xl font-semibold mb-5">
                   {category.category}
                 </h2>
-                <Accordion selectionMode="multiple" variant="splitted">
+                <Accordion selectionMode="multiple" variant="splitted" className="text-black">
                   {category.faqs.map((faq) => (
                     <AccordionItem
                       key={faq.id}
@@ -121,6 +122,7 @@ export default function App() {
                         backgroundColor: "transparent",
                       }}
                     >
+                      
                       <p className="text-md font-normal">{faq.content}</p>
                     </AccordionItem>
                   ))}
@@ -131,23 +133,6 @@ export default function App() {
         </div>
 
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-          {/* <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">
-            Contact Us
-          </h2>
-          <p className="mb-8 lg:mb-16 font-bold text-center text-white sm:text-xl">
-            Got a technical issue? Want to send feedback about a beta feature?
-            Let us know by submitting this form!
-          </p>
-
-          <div className="mb-8 lg:mb-16 font-bold text-center text-white sm:text-xl flex gap-4" >
-            <Link
-              isExternal
-              href=""
-              showAnchorIcon
-            >
-              Email
-            </Link>
-          </div> */}
           <ContactUs />
         </div>
       </div>

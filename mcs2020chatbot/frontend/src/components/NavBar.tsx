@@ -5,42 +5,60 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
   Link,
+  Button,
 } from "@nextui-org/react";
+export default function NavBar() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-export default function App() {
+  const menuItems = [
+    { label: "Home", href: "/" },
+    { label: "ChatBot", href: "/chatbot" },
+    // { label: "FAQ", href: "/faq" },
+  ];
+
   return (
-    <Navbar
-      className="bg-gray-800"
-      style={{
-        position: "sticky",
-        top: 0,
-        zIndex: 1000,
-        height: "80px",
-        padding: "0 20px",
-      }}
-      isBordered
-    >
-      {/* <NavbarBrand className="">
-        <p className="text-white font-bold text-inherit">MCS*2020 TA AI</p>
-      </NavbarBrand> */}
-      <NavbarContent className="hidden sm:flex gap-4" justify="end">
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-gray-800" isBordered>
+      <NavbarContent>
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden custom-toggle"
+        />
+        <NavbarBrand>
+          <p className="font-bold text-white">MCS2020 ChatBot</p>
+        </NavbarBrand>
+      </NavbarContent>
+
+      <NavbarContent className="hidden sm:flex gap-4 " justify="center">
         <NavbarItem>
-          <Link style={{ color: "white" }} href="/home">
+          <Link href="/" className="nav-link text-white">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link style={{ color: "white" }} href="/chatbot">
-            Chatbot
+          <Link href="/chatbot" className="nav-link text-white">
+            ChatBot
           </Link>
         </NavbarItem>
-        <NavbarItem>
-          <Link style={{ color: "white" }} href="/faq">
+        {/* <NavbarItem>
+          <Link href="/faq" className="nav-link text-white">
             FAQ
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
       </NavbarContent>
+
+      <NavbarMenu>
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item.label}-${index}`}>
+            <Link className="w-full" href={item.href} size="lg">
+              {item.label}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
     </Navbar>
   );
 }

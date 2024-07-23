@@ -39,7 +39,10 @@ const ChatBot: React.FC = () => {
         {
           // model: "gpt-3.5-turbo",
           model: "ft:gpt-3.5-turbo-0125:mcs:mcs2020:9lMqqsfm",
-          messages: [{ role: "user", content: input }],
+          messages: [
+            { role: "system", content: "Answer questions using only the provided training data. Do not use external information or general knowledge. If you do not know the answer based on the provided data, respond with 'I am not sure'." },
+            { role: "user", content: input }
+          ],
         },
         {
           headers: {
@@ -92,6 +95,7 @@ const ChatBot: React.FC = () => {
         <div className="flex items-center space-x-3">
           <Textarea
             fullWidth
+            variant="flat"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             onKeyPress={(e) =>
@@ -99,14 +103,15 @@ const ChatBot: React.FC = () => {
             }
             placeholder="Type your message..."
             className="flex-1 text-black font-bold p-2"
+            
           />
           <Button
             onClick={handleSendMessage}
             className="bg-gray-700 hover:bg-blue-600 rounded-xl"
             style={{
-              borderRadius: "50%",
-              width: "40px",
-              height: "40px",
+              // borderRadius: "50%",
+              // width: "40px",
+              // height: "40px",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
