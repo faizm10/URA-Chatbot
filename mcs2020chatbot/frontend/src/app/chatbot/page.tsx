@@ -38,9 +38,10 @@ const ChatBot: React.FC = () => {
         "https://api.openai.com/v1/chat/completions",
         {
           // model: "gpt-3.5-turbo",
-          model: "ft:gpt-3.5-turbo-0125:mcs:mcs2020:9lMqqsfm",
+          // model: "ft:gpt-3.5-turbo-0125:mcs:mcs2020:9lMqqsfm",
+          model: 'ft:gpt-3.5-turbo-0125:mcs::9oG5oAfi',
           messages: [
-            { role: "system", content: "Answer questions using only the provided training data. Do not use external information or general knowledge. If you do not know the answer based on the provided data, respond with 'I am not sure'." },
+            { role: "system", content: "The professor name is Nicole McCallum and the email is mccallun@uoguelph.ca. Answer questions using only the provided training data. Do not use external information or general knowledge. If you do not know the answer based on the provided data, respond with 'I am not sure'." },
             { role: "user", content: input }
           ],
         },
