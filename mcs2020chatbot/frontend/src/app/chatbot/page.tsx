@@ -1,7 +1,9 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import NavBar from "@/components/NavBar";
-import { Textarea, Button, Image } from "@nextui-org/react";
+import sendIcon from "../chatbot/send_icon.png";
+import Image from "next/image";
+import { Textarea, Button, Input } from "@nextui-org/react";
 import axios from "axios";
 
 interface Message {
@@ -39,10 +41,13 @@ const ChatBot: React.FC = () => {
         {
           // model: "gpt-3.5-turbo",
           // model: "ft:gpt-3.5-turbo-0125:mcs:mcs2020:9lMqqsfm",
-          model: 'ft:gpt-3.5-turbo-0125:mcs::9oG5oAfi',
+          model: "ft:gpt-3.5-turbo-0125:mcs::9qnX787G",
           messages: [
-            { role: "system", content: "The professor name is Nicole McCallum and the email is mccallun@uoguelph.ca. Answer questions using only the provided training data. Do not use external information or general knowledge. If you do not know the answer based on the provided data, respond with 'I am not sure'." },
-            { role: "user", content: input }
+            {
+              role: "system",
+              content: "",
+            },
+            { role: "user", content: input },
           ],
         },
         {
@@ -92,35 +97,37 @@ const ChatBot: React.FC = () => {
         ))}
         <div ref={endOfMessagesRef} />
       </div>
-      <div className="p-4 bg-gray-800 shadow-inner">
-        <div className="flex items-center space-x-3">
-          <Textarea
-            fullWidth
-            variant="flat"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
-            onKeyPress={(e) =>
-              e.key === "Enter" && !e.shiftKey && handleSendMessage()
-            }
-            placeholder="Type your message..."
-            className="flex-1 text-black font-bold p-2"
-            
-          />
-          <Button
-            onClick={handleSendMessage}
-            className="bg-gray-700 hover:bg-blue-600 rounded-xl"
-            style={{
-              // borderRadius: "50%",
-              // width: "40px",
-              // height: "40px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              border: "none",
-            }}
-          >
-            ⬆️
-          </Button>
+      <div className="p-4 bg-primary flex justify-center items-center">
+        <div className="w-full max-w-2xl">
+          <div className="flex items-center justify-center p-3 rounded-full gap-5">
+            <Input
+              onChange={(e) => setInputValue(e.target.value)}
+              value={inputValue}
+              type="text"
+              placeholder="Prompt Me"
+              onKeyPress={(e) =>
+                e.key === "Enter" && !e.shiftKey && handleSendMessage()
+              }
+              className="flex-1 p-2 text-lg"
+              endContent={
+                <div className="flex items-center gap-4">
+                  <Image
+                    src={sendIcon}
+                    alt="Send"
+                    onClick={handleSendMessage}
+                    className="cursor-pointer"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+              }
+            />
+          </div>
+          <p className="text-xs text-center font-bold mt-4">
+            Note that the ChatBot may provide inaccurate key dates and
+            information. Double check with the professor, TA and/or course
+            documents. Do NOT fully rely on the ChatBot!
+          </p>
         </div>
       </div>
     </div>

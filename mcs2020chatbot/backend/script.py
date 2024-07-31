@@ -2,26 +2,41 @@ import json
 from openai import OpenAI
 
 # OpenAI API Key
-client = OpenAI(api_key='sk-hello-trpKudk5GlpQL1AD5bDaT3BlbkFJm32PcCNVz4MusxVrJcVT')
+client = OpenAI(
+    api_key='sk-hello-trpKudk5GlpQL1AD5bDaT3BlbkFJm32PcCNVz4MusxVrJcVT')
 
 # Function to generate variations
-def generate_variations(question, answer, num_variations=5):
-    prompt = f"Generate {num_variations} variations of the following question in a student's tone (I or We). Do not use numbers or bullet points:\n\n{question}"
+def generate_variations(question, answer, num_variations=8):
+    prompt = f"""
+    Generate {num_variations} variations of the following question in a student's tone, focusing on what students would normally ask in an email or discussion. The variations should be contextually appropriate and sound natural. Remove bulleted and numbered list. Here is the question:
+    
+    {question}
+    
+    Examples of student tone questions:
+    What is the deadline for the first quiz?
+    How can I find out the due date for the first quiz?
+    When is the first quiz supposed to be submitted?
+    """
     completion = client.chat.completions.create(
         model="gpt-4o-mini",
-        messages=[
-            {"role": "system", "content": "You are an assistant that generates variations of questions in a student's tone."},
-            {"role": "user", "content": prompt}
-        ]
+        messages=[{
+            "role": "system",
+            "content": "You are an assistant that generates variations of questions in a student's tone."
+        }, {
+            "role": "user",
+            "content": prompt
+        }]
     )
-    
+
     variations = completion.choices[0].message.content.strip().split('\n')
     # Remove any empty strings or unnecessary whitespace
-    variations = [variation.strip() for variation in variations if variation.strip()]
+    variations = [
+        variation.strip() for variation in variations if variation.strip()
+    ]
     return [(variation, answer) for variation in variations]
 
 # Read questions and answers from the input file
-with open('mgmt1000.jsonl', 'r') as infile:
+with open('quick.jsonl', 'r') as infile:
     question_answer_pairs = []
     for line in infile:
         try:
@@ -42,10 +57,18 @@ with open('variations.jsonl', 'w') as outfile:
     for i, (question, answer) in enumerate(question_answer_pairs):
         variations = generate_variations(question, answer)
         for variation, answer in variations:
-            data = {"messages": [{"role": "user", "content": variation}, {"role": "assistant", "content": answer}]}
+            data = {
+                "messages": [{
+                    "role": "user",
+                    "content": variation
+                }, {
+                    "role": "assistant",
+                    "content": answer
+                }]
+            }
             json.dump(data, outfile)
             outfile.write('\n')
-        
+
         if (i + 1) % progress_intervals == 0:
             print(f"{((i + 1) // progress_intervals) * 10}% completed")
 
