@@ -6,9 +6,9 @@ client = OpenAI(
     api_key='sk-hello-trpKudk5GlpQL1AD5bDaT3BlbkFJm32PcCNVz4MusxVrJcVT')
 
 # Function to generate variations
-def generate_variations(question, answer, num_variations=8):
+def generate_variations(question, answer, num_variations=5):
     prompt = f"""
-    Generate {num_variations} variations of the following question in a student's tone, focusing on what students would normally ask in an email or discussion. The variations should be contextually appropriate and sound natural. Remove bulleted and numbered list. Here is the question:
+    Generate {num_variations} variations of the following question in a university level student's tone, focusing on what students would normally ask in an email or discussion. The variations should be contextually appropriate and sound natural. Remove bulleted and numbered list. Here is the question:
     
     {question}
     
