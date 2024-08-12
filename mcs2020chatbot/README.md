@@ -5,7 +5,6 @@ This chatbot is designed to support students of the Information Management cours
 
 ## Features
 - **Interactive Q&A**: Answers to queries related to information management theories, data models, and current technological trends.
-- **Resource Navigation**: Guidance on how to access course materials, including textbooks and research papers.
 
 ## Beta Testing
 By participating in beta testing, students engage directly with an emerging technology, contributing to the development of a potential university-wide service. This hands-on experience in product development allows students to provide feedback on the chatbot, enhancing their understanding of high-tech applications and the intricacies of AI in education.
@@ -34,9 +33,7 @@ To set up the development environment for the frontend, follow these instruction
 ```bash
 npx create-next-app@latest 'your-project-name'
 cd your-project-name
-npm install @nextui-org/react framer-motion
-npm install tailwindcss@latest postcss@latest autoprefixer@latest
-npx tailwindcss init -p
+npm install
 ```
 ## 4. Deploy & Build
 
@@ -64,8 +61,7 @@ This document describes the backend architecture of the MCS*2020 Information Man
 ## 2. Technology Stack
 
 - **Python**
-- **Flask/Django**: TBD
-- **Future Integration with JSON Database**: TBD
+- **Jsonl**
 
 ## 3. Installation and Setup
 
@@ -82,4 +78,4 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
 
 #Run Python Program
-python main.py
+python main.py #replace main with the actual program name

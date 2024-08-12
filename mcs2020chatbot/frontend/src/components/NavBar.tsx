@@ -17,7 +17,7 @@ export default function NavBar() {
   const menuItems = [
     { label: "Home", href: "/" },
     { label: "ChatBot", href: "/chatbot" },
-    // { label: "FAQ", href: "/faq" },
+    { label: "FAQ", href: "/faq" },
   ];
 
   return (
@@ -43,11 +43,11 @@ export default function NavBar() {
             ChatBot
           </Link>
         </NavbarItem>
-        {/* <NavbarItem>
+        <NavbarItem>
           <Link href="/faq" className="nav-link text-white">
             FAQ
           </Link>
-        </NavbarItem> */}
+        </NavbarItem>
       </NavbarContent>
 
       <NavbarMenu>

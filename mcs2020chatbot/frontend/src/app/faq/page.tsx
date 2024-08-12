@@ -8,7 +8,7 @@ import {
   Link,
 } from "@nextui-org/react";
 import NavBar from "@/components/NavBar";
-import ContactUs from "@/components/ContactUs";
+import {ContactUs} from "@/components/ContactUs";
 
 // Define FAQs
 const faqCategories = [
@@ -34,7 +34,8 @@ const faqCategories = [
     faqs: [
       {
         id: 3,
-        title: "What should I do if the chatbot doesn't understand my question?",
+        title:
+          "What should I do if the chatbot doesn't understand my question?",
         content:
           "Try rephrasing your question or use simpler, more direct language. Ensure that your questions are within the scope of the chatbot's capabilities.",
       },
@@ -92,38 +93,44 @@ export default function App() {
   return (
     <>
       <NavBar />
-      <div className="bg-white py-10">
+      <div className="bg-gray-100 py-10 min-h-screen">
         <div className="max-w-7xl container mx-auto px-4 py-8">
-          <h1 className="text-3xl font-bold text-center mb-8 text-black">
+          <h1 className="text-4xl font-extrabold text-center mb-12 text-gray-800">
             Frequently Asked Questions
           </h1>
           <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
             {faqCategories.map((category) => (
               <div
                 key={category.category}
-                className="rounded-lg shadow-lg p-6 text-black text-center"
+                className="p-8  text-gray-800"
               >
-                <h2 className="text-2xl font-semibold mb-5">
+                <h2 className="text-3xl font-bold underline mb-6 text-center text-gray-800">
                   {category.category}
                 </h2>
-                <Accordion selectionMode="multiple" variant="splitted" className="text-black">
+                <Accordion
+                  selectionMode="multiple"
+                  variant="splitted"
+                  className="text-gray-800"
+                >
                   {category.faqs.map((faq) => (
                     <AccordionItem
                       key={faq.id}
                       title={faq.title}
-                      className="text-m font-bold"
+                      className="text-md font-bold text-gray-800"
                       style={{
                         textAlign: "left",
                         padding: "15px",
-                        border: "black",
+                        border: "1px solid #E2E8F0",
                         borderRadius: "8px",
                         marginBottom: "10px",
-                        color: "black",
-                        backgroundColor: "transparent",
+                        color: "gray-800",
+                        backgroundColor: "#F7FAFC",
+                        transition: "background-color 0.3s ease",
                       }}
                     >
-                      
-                      <p className="text-md font-normal">{faq.content}</p>
+                      <p className="text-md font-normal text-gray-600">
+                        {faq.content}
+                      </p>
                     </AccordionItem>
                   ))}
                 </Accordion>
@@ -132,7 +139,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md text-center">
           <ContactUs />
         </div>
       </div>

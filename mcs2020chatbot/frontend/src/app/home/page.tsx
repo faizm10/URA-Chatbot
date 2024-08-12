@@ -7,7 +7,7 @@ const Home: React.FC = () => {
   return (
     <>
       <NavBar />
-      <div className="relative min-h-screen bg-gradient-to-b from-gray-800 to-gray-900 flex flex-col items-center justify-center text-center p-4 flex: 1" >
+      <div className="relative min-h-screen bg-gradient-to-b from-gray-800 to-gray-900 flex flex-col items-center justify-center text-center p-4 flex: 1">
         {/* ParticlesComponent as background */}
         <Suspense fallback={<div>Loading...</div>}>
           <ParticlesComponent />

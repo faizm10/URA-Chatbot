@@ -1,28 +1,30 @@
-"use client";
-import { useState } from "react";
-
-const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+const PUBLIC_KEY = "C0pjgOv4eYlYZpMtI";
+const SERVICE_ID = "service_y42rruj";
+const TEMPLATE_ID = "template_7mccdmp";
+export const ContactUs = () => {
+  const form = useRef();
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    // Handle form submission logic here, e.g., sending data to a server
-    console.log("Form data", formData);
 
-    setSubmitted(true);
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+      () => {
+        console.log("SUCCESS!"); //testing purposes
+        setSubmitted(true);
+      },
+      (error) => {
+        console.log("FAILED...", error.text); //testing purposes
+        setError("Failed to send the message. Please try again later.");
+      }
+    );
   };
 
   return (
-    <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-primary text-white rounded-lg shadow-lg">
+    <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md  text-gray-800 ">
       <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center">
         Contact Us
       </h2>
@@ -36,62 +38,57 @@ const ContactUs = () => {
           Thank you for your message. We will get back to you soon!
         </p>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form ref={form} onSubmit={sendEmail} className="space-y-6">
+          {error && <p className="text-red-600">{error}</p>}
           <div className="flex flex-col">
-            <label htmlFor="name" className="mb-2 font-bold ">
+            <label htmlFor="user_name" className="mb-2 font-bold text-gray-700">
               Your Name:
             </label>
             <input
               type="text"
-              id="name"
-              name="name"
+              id="user_name"
+              name="user_name"
               placeholder="John Doe"
-              value={formData.name}
-              onChange={handleChange}
               required
-              className="px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 text-black font-bold"
+              className="px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 text-gray-800 font-bold"
             />
           </div>
           <div className="flex flex-col">
-            <label htmlFor="email" className="mb-2 font-bold">
+            <label
+              htmlFor="user_email"
+              className="mb-2 font-bold text-gray-700"
+            >
               Your Email:
             </label>
             <input
               type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
+              id="user_email"
+              name="user_email"
               required
               placeholder="johndoe@gmail.com"
-              className="px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 text-black font-bold"
+              className="px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 text-gray-800 font-bold"
             />
           </div>
           <div className="flex flex-col">
-            <label htmlFor="message" className="mb-2 font-bold">
+            <label htmlFor="message" className="mb-2 font-bold text-gray-700">
               Your Message:
             </label>
             <textarea
               id="message"
               name="message"
-              value={formData.message}
-              onChange={handleChange}
               required
               rows={4}
               placeholder="Enter your message here..."
-              className="px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300"
+              className="px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 text-gray-800"
             />
           </div>
-          <button
+          <input
             type="submit"
-            className="w-full py-2 mt-4 bg-blue-600 hover:bg-blue-700 rounded-md shadow-lg font-bold text-white"
-          >
-            Send Message
-          </button>
+            value="Send"
+            className="w-full py-2 mt-4 bg-blue-600 hover:bg-blue-700 rounded-md shadow-lg font-bold text-white cursor-pointer"
+          />
         </form>
       )}
     </div>
   );
 };
-
-export default ContactUs;
