@@ -48,6 +48,11 @@ export default function NavBar() {
             FAQ
           </Link>
         </NavbarItem>
+        {/* <NavbarItem>
+          <Link href="/admin" className="nav-link text-white">
+            admin
+          </Link>
+        </NavbarItem> */}
       </NavbarContent>
 
       <NavbarMenu>

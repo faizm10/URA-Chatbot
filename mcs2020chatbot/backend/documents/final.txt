@@ -1,0 +1,276 @@
+﻿
+
+
+
+
+
+
+
+
+Final Exam
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Final Exam
+
+
+
+
+
+
+Weight: 
+40%
+Submission
+: via the 
+Quizzes
+ tool using Respondus LockDown Browser
+Due
+: Refer to the 
+Outline
+ for the exact due date
+
+
+Overview
+
+
+The final examination will be a combination of multiple-choice and short-answer questions and will cover all of the course readings and unit content. Based on the policies of the Department of Marketing and Consumer Studies, you must pass the final exam in order to pass this course.
+
+
+Practice Test
+
+
+Before you take the final exam, you 
+MUST complete the Practice Test
+. The content of the practice test is not related to the course. The purpose of the practice test is to ensure that Respondus LockDown Browser is set up properly and that you are comfortable using the software. You are recommended to take the practice test as many times as you need to feel comfortable with the LockDown Browser prior to the final exam. 
+Make sure you follow the instructions and guidelines for taking practice test below.
+ You will have access to the practice test when the course starts. By taking the practice test, you will be able to identify and troubleshoot any technical issues early in the course. It is also recommended that you complete the test using the computer that you will use for the final exam to avoid any technical and connectivity issues that might arise. While there will be no mark given for completing the practice test, this activity will help you ensure you have a problem-free experience with the software before taking the final exam.
+
+
+
+
+
+
+For more information about the Respondus LockDown Browser, refer to the 
+Outline
+ (in the Course Technologies and Technical Support section). Once you have reviewed the requirements, 
+download and install LockDown Browser 
+. Follow the onscreen instructions to complete the install.
+
+
+
+
+
+
+Online Final Exam
+
+
+At the end of the semester, you will be required to take an online final exam.
+
+
+The final exam will be delivered online via the 
+Quizzes
+ tool. All final exams are 2 hours in length and will be scheduled by Registrarial Services. There will be an entry window during which you can enter the online exam. Further details about your entry window will be announced closer to the exam period.  
+
+
+Similar to a sit-down exam where you must arrive prior to the start of the exam
+, it is highly recommended 
+that you enter the online exam environment in Respondus at least 20-30 minutes before the end of the available window to allow enough time for you to complete the Respondus Startup Sequence and ensure that you have the full two hours for the exam.  
+
+
+Make sure to thoroughly review the Instructions and Guidelines for Preparing Your Test Taking Environment provided on this page. If you have any questions regarding this process or encounter any technical issues during the final exam, please contact the CourseLink Support at 
+courselink@uoguelph.ca
+ or 519-824-4120 ext. 56939.
+
+
+
+
+
+
+
+
+Please be sure to thoroughly review the 
+Instructions and Guidelines for Using Respondus LockDown Browser
+ instructions below.
+
+
+If you have any questions regarding the use of Respondus LockDown Browser, or if you encounter any technical issues during the practice test or final exam, please 
+contact CourseLink Support 
+at 
+courselink@uoguelph.ca
+ or 519-824-4120 ext. 56939.
+
+
+University of Guelph degree and associate diploma students must check 
+WebAdvisor
+ for their examination schedule. Open Learning program students must check the 
+Open Learning Program Final Examination Schedule
+ for their examination schedule. 
+
+
+
+
+
+
+Instructions for Taking Practice Test/Final Exam with Respondus LockDown Browser
+
+
+Before taking both the Practice Test and Online Final Exam, complete the following steps:
+
+
+
+
+Close all programs, unless one is used to connect you to the Internet.
+
+
+Log into CourseLink, select your course, and navigate to the Practice Test/Final Exam by selecting 
+Quizzes
+ from the Tools dropdown menu.
+
+
+Start LockDown Browser.
+
+
+If prompted, either close a blocked program (e.g. screen capture, instant messaging) by choosing 
+Yes
+. Or, close LockDown Browser and close the blocked program before restarting.
+
+
+
+
+Once you selected the Practice Test/Final Exam link, you will be prompted to complete the Startup Sequence for the webcam that occurs before the test begins:
+
+
+
+
+Run      the Webcam Check
+ and, if necessary, resolve any      issues. The Webcam Check will confirm that your webcam and microphone are      working properly. The first time the Webcam Check is performed on a      computer, Adobe Flash Player will require you to select Allow and      Remember.
+
+
+Take      Your Photo.
+ Look into the camera and position      your face so it fills most of the picture window. Select “Take Picture.”
+
+
+Show      Your Identification.
+ Hold your student ID card to the      camera and select “Take Picture.” If you do not have a student      identification card, use other photo identification such as a driver’s      licence. 
+
+
+Conduct      the Environment Check.
+ 
+A mirror or cell phone with a      front-facing camera is required to complete this check if you do not have      an external webcam.
+ Make sure the area around your computer is clear      of papers, books, phones, etc. Select "Start Recording" and      slowly tilt/pan your webcam so a video can be made of the area around your      computer. If using a mirror, hold the reflective side facing your computer      up to your webcam (an arm’s length away) and slowly show the edges of your      computer monitor to your webcam.  If using a cell phone with      front-facing camera, hold the screen side facing your computer up to your      webcam (an arm’s length away) and use it to show the edges of your      computer monitor.  Ensure that you      have recorded all 360 degrees of your environment.  This includes the      areas beside, behind, under and above your computer.  Select      "Stop Recording" when finished. 
+Once the environment check is      complete, be sure to put your cell phone away from your exam area (i.e. in      your pocket or in a drawer). 
+Incomplete Environment Checks may be      flagged for review by the instructor. For an example of an effective      Environment Check, view 
+Environment Check Tutorial
+. 
+
+
+Additional      Instructions:
+  During the exam, do not access other      resources (a phone, tablet, notes, books, etc.) or communicate with other      people. Please stay in your seat and focus on the computer screen until      the exam is complete. If an interruption occurs, briefly explain what      happened by speaking directly to your webcam.  Note that you will not      be given additional testing time and your video will be flagged for review      by the instructor.  You are not permitted to take any materials with      you to another room or access any resources (textbooks, notes, internet,      people, etc.) during this time. 
+
+
+
+
+The Practice Test/Final Exam will begin after the Startup Sequence is complete.
+
+
+
+
+
+
+Note:
+ Once the test/final exam has been started with Respondus LockDown Browser and Monitor, you cannot exit until the Submit button is clicked. Upon completing and submitting the Practice Test/Final Exam, exit LockDown Browser.
+
+
+
+
+
+
+Problems?
+
+
+If you encounter technical difficulties downloading, installing, or any other problems taking the Practice Test/Final Exam with Respondus LockDown Browser (e.g., your computer freezes during the test or the software fails to work, etc.), contact the CourseLink Support at 
+courselink@uoguelph.ca
+ or 519-824-4120 ext. 56939 or 1-866-275-1478 (toll-free in Canada and US).
+
+
+Guidelines for Preparing Your Test Taking Environment for Practice Test and Final Exam
+
+
+The online testing environment for the practice test and final exam should mimic an “in class” testing environment. Ensure you start the online exam 20-30 minutes before the end of the window of time to allow enough time for you to go through the Startup Sequence.
+
+
+When taking the practice test/final exam, follow these guidelines:
+
+
+
+
+CourseLink      Support:
+ Write CourseLink Support information      (519-824-4120 ext. 56939; toll-free (Canada & US) 1-866-275-1478) down      because the LockDown Browser will prevent you from accessing other      websites.
+
+
+Space:
+ Ensure      you’re in a location where you won’t be interrupted. Remove items from the      desk that are not exam related. This includes all books, papers,      notebooks, calculators, etc. unless specifically permitted by the      instructor. No writing on the desk or walls.
+
+
+Internet      Connection:
+ A broadband connection is required.      Make sure you have a good Internet connection. You may want to check your      network cabling, Wi-Fi connection, etc. You can check your Internet speed      by going to 
+Speedtest.net
+ website.
+
+
+Laptop:
+ Make      sure your laptop is sufficiently charged or plugged in.
+
+
+Presence:
+ You should remain in the room during the testing period at any time, unless      specifically permitted by the instructor. You must not take the computer into another room to finish testing.. If an interruption occurs where you need to leave, if possible, briefly indicate that you need to leave by speaking directly to your webcam.
+
+
+No Interaction with Others.
+ No other persons except the test-taker are permitted to be in the room during the exam; this includes a roommate. Do not talk to anyone else – no communicating with others by any means. It may be beneficial to post a sign on the door of your room indicating “Exam in Progress”.
+
+
+Webcam and Video Quality:
+ Make sure your webcam is plugged in or enabled before starting LockDown Browser. To produce a good webcam video, do the following:
+
+
+
+
+Dress       the same way you would if you were taking an exam in class.
+
+
+Avoid wearing baseball caps or hats with brims.
+
+
+Ensure your computer or laptop is on a firm surface (a desk or table) — not on your lap, a bed, or another surface that might move.
+
+
+If using a built-in webcam, avoid tilting the screen after the webcam setup       is complete.
+
+
+Lighting       in the room must be bright enough to be considered “daylight” quality.       Overhead lighting is preferred; however, if overhead is not possible, the       source of light should not be behind the student (i.e., sitting with your       back to a window).
+
+
+
+
+Resources:
+ Remove      any materials from the desk that are not exam related. This includes all      books, papers, notebooks, calculators, etc. unless specifically permitted      by the instructor.
+
+
+Other      devices:
+ Turn off all other devices (e.g.,      tablets, phones, second computers) and close all other programs and/or      windows on the testing computer prior to logging into the proctored test      environment.
+
+
+Websites and computer applications:
+ Remember      that LockDown Browser will prevent you from accessing other websites or      applications. Once the test/ final exam has been started with Respondus LockDown Browser and Monitor, you cannot exit until the Submit button is clicked.

@@ -1,10 +1,11 @@
-"use client";
+'use client';
 import React, { useState, useEffect, useRef } from "react";
 import NavBar from "@/components/NavBar";
 import sendIcon from "../chatbot/send_icon.png";
 import Image from "next/image";
-import { Textarea, Button, Input } from "@nextui-org/react";
+import { Input } from "@nextui-org/react";
 import axios from "axios";
+import ReactMarkdown from 'react-markdown';
 
 interface Message {
   text: string;
@@ -36,31 +37,9 @@ const ChatBot: React.FC = () => {
 
   const handleBotResponse = async (input: string): Promise<void> => {
     try {
-      const response = await axios.post(
-        "https://api.openai.com/v1/chat/completions",
-        {
-          // model: "gpt-3.5-turbo",
-          // model: "ft:gpt-3.5-turbo-0125:mcs:mcs2020:9lMqqsfm",
-          model: "ft:gpt-3.5-turbo-0125:mcs::9qnX787G",
-          messages: [
-            {
-              role: "system",
-              content: "",
-            },
-            { role: "user", content: input },
-          ],
-        },
-        {
-          headers: {
-            Authorization: `Bearer sk-hello-trpKudk5GlpQL1AD5bDaT3BlbkFJm32PcCNVz4MusxVrJcVT`,
-            "Content-Type": "application/json",
-          },
-        }
-      );
-
-      const data = response.data;
+      const response = await axios.post('/api/womp', { question: input });
       const newBotMessage: Message = {
-        text: data.choices[0].message.content.trim(),
+        text: response.data.response,
         sender: "bot",
       };
       setMessages((prevMessages) => [...prevMessages, newBotMessage]);
@@ -91,7 +70,11 @@ const ChatBot: React.FC = () => {
                   : "bg-gray-300 text-black"
               }`}
             >
-              {msg.text}
+              {msg.sender === "bot" ? (
+                <ReactMarkdown>{msg.text}</ReactMarkdown>
+              ) : (
+                msg.text
+              )}
             </div>
           </div>
         ))}
