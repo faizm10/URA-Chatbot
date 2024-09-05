@@ -40,6 +40,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     'final.txt',
     'Quizzes.txt',
     'SONA.txt',
+    'chapter.txt'
   ].map(file => path.join(process.cwd(), 'documents', file));
 
   let content = '';
