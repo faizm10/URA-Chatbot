@@ -50,32 +50,3 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-### Backend Documentation for MCS*2020 Information Management Chatbot
-
-## 1. Introduction
-
-### Purpose
-This document describes the backend architecture of the MCS*2020 Information Management Chatbot, which is responsible for handling processing user queries and integrating with AI services.
-
-## 2. Technology Stack
-
-- **Python**
-- **Jsonl**
-
-## 3. Installation and Setup
-
-To set up the development environment, follow these steps:
-
-```bash
-# Create a virtual environment
-python -m venv venv
-
-# Activate the virtual environment
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-
-# Install dependencies from a requirements.txt file
-pip install -r requirements.txt
-
-#Run Python Program
-python main.py #replace main with the actual program name
